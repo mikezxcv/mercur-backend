@@ -1,0 +1,22 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "version": 2,
+  "name": "mercur-backend",
+  "buildCommand": "yarn install --frozen-lockfile && yarn build && node ./vercel-build.js",
+  "outputDirectory": ".vercel/output",
+  "installCommand": "yarn install --frozen-lockfile",
+  "framework": null,
+  "env": {
+    "NODE_ENV": "production"
+  },
+  "routes": [
+    {
+      "src": "/admin/?(.*)",
+      "dest": "/_static/admin/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/api/index.js"
+    }
+  ]
+}
