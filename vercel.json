@@ -1,22 +1,37 @@
 {
-  "$schema": "https://openapi.vercel.sh/vercel.json",
   "version": 2,
-  "name": "mercur-backend",
-  "buildCommand": "yarn install --frozen-lockfile && yarn build && node ./vercel-build.js",
-  "outputDirectory": ".vercel/output",
-  "installCommand": "yarn install --frozen-lockfile",
+  "buildCommand": "yarn build",
+  "installCommand": "yarn install",
   "framework": null,
-  "env": {
-    "NODE_ENV": "production"
+  "outputDirectory": ".medusa",
+  "functions": {
+    "api/**/*.js": {
+      "memory": 3008,
+      "maxDuration": 60
+    }
   },
   "routes": [
     {
-      "src": "/admin/?(.*)",
-      "dest": "/_static/admin/$1"
+      "src": "/app/(.*)",
+      "dest": "/.medusa/client/$1"
+    },
+    {
+      "src": "/app",
+      "dest": "/.medusa/client/index.html"
     },
     {
       "src": "/(.*)",
-      "dest": "/api/index.js"
+      "dest": "/api/index"
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/app/(.*)",
+      "destination": "/.medusa/client/$1"
+    },
+    {
+      "source": "/app",
+      "destination": "/.medusa/client/index.html"
     }
   ]
 }
