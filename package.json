@@ -25,7 +25,15 @@
     "@medusajs/admin-sdk": "2.11.2",
     "@medusajs/cli": "2.11.2",
     "@medusajs/framework": "2.11.2",
-    "@medusajs/medusa": "2.11.2"
+    "@medusajs/medusa": "2.11.2",
+    "@mercurjs/algolia": "^1.4.1",
+    "@mercurjs/b2c-core": "^1.4.1",
+    "@mercurjs/commission": "^1.4.1",
+    "@mercurjs/framework": "^1.4.1",
+    "@mercurjs/payment-stripe-connect": "^1.4.1",
+    "@mercurjs/requests": "^1.4.1",
+    "@mercurjs/resend": "^1.4.1",
+    "@mercurjs/reviews": "^1.4.1"
   },
   "devDependencies": {
     "@medusajs/test-utils": "2.11.2",
