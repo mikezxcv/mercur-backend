@@ -5,8 +5,3 @@ services:
     plan: free
     buildCommand: yarn install && yarn build
     startCommand: yarn start
-    envVars:
-      - key: NODE_ENV
-        value: production
-      - key: PORT
-        value: 9000
