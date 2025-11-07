@@ -1,18 +1,21 @@
 // api/index.js
-const { startMedusa } = require("@medusajs/medusa/dist");
-const path = require("path");
+const medusaApp = require("../.medusa/server");
 
-(async () => {
-  const projectRoot = path.join(__dirname, "../");
-  process.env.NODE_ENV = process.env.NODE_ENV || "production";
-
+module.exports = async (req, res) => {
   try {
-    console.log("🚀 Starting Medusa backend on Vercel...");
-    await startMedusa({
-      directory: projectRoot,
-    });
+    // Si tu build expone una función express-like (app(req,res))
+    if (typeof medusaApp === "function") {
+      return medusaApp(req, res);
+    }
+
+    // Si requiere iniciar manualmente
+    if (medusaApp.default && typeof medusaApp.default === "function") {
+      return medusaApp.default(req, res);
+    }
+
+    res.status(500).send("Medusa app no se pudo inicializar correctamente.");
   } catch (err) {
-    console.error("❌ Failed to start Medusa:", err);
-    process.exit(1);
+    console.error("Error ejecutando backend Medusa:", err);
+    res.status(500).send("Error interno en backend Medusa");
   }
-})();
+};
