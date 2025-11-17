@@ -23,5 +23,5 @@ build
 !.yarn/sdks
 !.yarn/versions
 
-# .medusa
+.medusa
 .vercel

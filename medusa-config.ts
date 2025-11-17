@@ -1,5 +1,6 @@
 
-import { defineConfig, loadEnv } from '@medusajs/framework/utils'
+import { defineConfig, loadEnv, Modules } from '@medusajs/framework/utils'
+import { resolve } from 'path'
 
 loadEnv(process.env.NODE_ENV || 'development', process.cwd())
 
@@ -14,7 +15,8 @@ module.exports = defineConfig({
       authCors: process.env.AUTH_CORS!,
       jwtSecret: process.env.JWT_SECRET || 'supersecret',
       cookieSecret: process.env.COOKIE_SECRET || 'supersecret'
-    }
+    },
+    
   },
   plugins: [
     {
@@ -83,6 +85,21 @@ module.exports = defineConfig({
           }
         ]
       }
-    }
+    },
+    {
+      resolve: "@medusajs/medusa/file",
+      options: {
+        providers: [
+          {
+            resolve: "@medusajs/medusa/file-local",
+            id: "local",
+            options: {
+              backend_url: process.env.BACKEND_URL || "http://localhost:9000",
+              // provider options...
+            },
+          },
+        ],
+      },
+    },
   ]
 })
