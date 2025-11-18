@@ -2743,9 +2743,9 @@
     stripe "^19.1.0"
 
 "@mercurjs/requests@^1.4.1":
-  version "1.4.1"
-  resolved "https://registry.yarnpkg.com/@mercurjs/requests/-/requests-1.4.1.tgz#0323f8405d776e016963299305edde13837f110a"
-  integrity sha512-mSWSOmYIWgAB7mmmkNGoIFCFCywZnk+Vbsho7aJ7TFljA256pZKJlqt8uXK8j5AmfOvIssto8J41oGj1N0uz8g==
+  version "1.4.3"
+  resolved "https://registry.yarnpkg.com/@mercurjs/requests/-/requests-1.4.3.tgz#bd8672e0711064fa37f1be26ae8bcfd9957fd9ce"
+  integrity sha512-CvUr7sedCjslWHSy5lb2kygrH2GCx/VMuBX99d3srJMs6Ke4aX1FIiJvgOpH2ohgnwUuuvBZngc9PQSZZ1XMrg==
 
 "@mercurjs/resend@^1.4.1":
   version "1.4.1"
