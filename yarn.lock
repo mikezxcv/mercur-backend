@@ -2755,9 +2755,9 @@
     resend "^4.1.2"
 
 "@mercurjs/reviews@^1.4.1":
-  version "1.4.1"
-  resolved "https://registry.yarnpkg.com/@mercurjs/reviews/-/reviews-1.4.1.tgz#efa03e6526f727d6066431705196cda36366ede4"
-  integrity sha512-tYu2PUxbfkxklsdQ9tyYgxyb207HZGcExiIeN9xIU0ztI+dpGhmHk57fvH+J5pkvdH44oySBd2yD8EbvkKRWrw==
+  version "1.4.3"
+  resolved "https://registry.yarnpkg.com/@mercurjs/reviews/-/reviews-1.4.3.tgz#b88d6cd586ab73dd1721a7646b7f9bf55a41845c"
+  integrity sha512-6Z4nDP/DI6YJwKp77JA+UUlUsDOyiRuI/6qqFP+Slc5iw04zBwt5almBexB/4pvy948j0LjxpphT5GOkzfnuvA==
 
 "@mikro-orm/cli@6.4.16":
   version "6.4.16"
