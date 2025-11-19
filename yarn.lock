@@ -2714,9 +2714,9 @@
     ulid "^2.3.0"
 
 "@mercurjs/algolia@^1.4.1":
-  version "1.4.1"
-  resolved "https://registry.yarnpkg.com/@mercurjs/algolia/-/algolia-1.4.1.tgz#13487be10fc61b8273fb1508e0b4f88e5866c46a"
-  integrity sha512-lV+6O8DuwW3lXNMzWJHRM4KIoO5znoONwkctwp+unaHnT5Q/K6/vzg3qf4fHukNJ9vQ0AgMkajY9B6gQu8QhlQ==
+  version "1.4.3"
+  resolved "https://registry.yarnpkg.com/@mercurjs/algolia/-/algolia-1.4.3.tgz#5473c4a7265062b17a8e5ae97e5482a61d647575"
+  integrity sha512-dodDN4j1t7JvnqEPqv2bMJqGYKkjca8zaL9BCHg/Uzwua0qvNHEMiEOkMurRNOW+nHMkmKeOocMcM+LIG3ANCw==
   dependencies:
     algoliasearch "^5.40.0"
 
