@@ -23,10 +23,10 @@
     "test:unit": "TEST_TYPE=unit NODE_OPTIONS=--experimental-vm-modules jest --silent --runInBand --forceExit"
   },
   "dependencies": {
-    "@medusajs/admin-sdk": "2.11.2",
-    "@medusajs/cli": "2.11.2",
-    "@medusajs/framework": "2.11.2",
-    "@medusajs/medusa": "2.11.2",
+    "@medusajs/admin-sdk": "2.11.3",
+    "@medusajs/cli": "2.11.3",
+    "@medusajs/framework": "2.11.3",
+    "@medusajs/medusa": "2.11.3",
     "@mercurjs/algolia": "^1.4.1",
     "@mercurjs/b2c-core": "^1.4.1",
     "@mercurjs/commission": "^1.4.1",
