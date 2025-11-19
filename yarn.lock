@@ -2721,9 +2721,9 @@
     algoliasearch "^5.40.0"
 
 "@mercurjs/b2c-core@^1.4.1":
-  version "1.4.1"
-  resolved "https://registry.yarnpkg.com/@mercurjs/b2c-core/-/b2c-core-1.4.1.tgz#f20b023dce90a506c14f0c0c5a188cce9f6bf3dc"
-  integrity sha512-YK7YnmGODL6Jvi08Kf8E8H7OwUugOSSVy6GphBBk4ATbZAOZWuwESTf0mP2bUAjNuvBnZSRoWRV8PkFte0+mHA==
+  version "1.4.3"
+  resolved "https://registry.yarnpkg.com/@mercurjs/b2c-core/-/b2c-core-1.4.3.tgz#34cde105741a6fb293f79ae2adfc860cedff11b1"
+  integrity sha512-JEN/qCPDAL7o9OkL+MVKp9Wd6LxfmmsDDVdcGCiNN67ja6D4bnLpDLeYbzfnlxqRRv4XmolESq/IATw9oCEgNQ==
 
 "@mercurjs/commission@^1.4.1":
   version "1.4.1"
